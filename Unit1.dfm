@@ -1,0 +1,149 @@
+object Form1: TForm1
+  Left = 453
+  Top = 152
+  Caption = 'Form1'
+  ClientHeight = 431
+  ClientWidth = 440
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 328
+    Width = 27
+    Height = 25
+    Caption = 'Q1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 360
+    Width = 27
+    Height = 25
+    Caption = 'Q2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -20
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Chart1: TChart
+    Left = 0
+    Top = 8
+    Width = 425
+    Height = 297
+    BackWall.Brush.Style = bsClear
+    Legend.Shadow.HorizSize = 10
+    Legend.Shadow.VertSize = 10
+    Legend.Visible = False
+    Title.Text.Strings = (
+      'Forward 2 DOF')
+    BottomAxis.Automatic = False
+    BottomAxis.AutomaticMaximum = False
+    BottomAxis.AutomaticMinimum = False
+    BottomAxis.Maximum = 10.000000000000000000
+    BottomAxis.Minimum = -10.000000000000000000
+    LeftAxis.Automatic = False
+    LeftAxis.AutomaticMaximum = False
+    LeftAxis.AutomaticMinimum = False
+    LeftAxis.LabelsMultiLine = True
+    LeftAxis.Maximum = 10.000000000000000000
+    LeftAxis.Minimum = -10.000000000000000000
+    RightAxis.Automatic = False
+    RightAxis.AutomaticMaximum = False
+    RightAxis.AutomaticMinimum = False
+    RightAxis.Maximum = 10.000000000000000000
+    RightAxis.Minimum = -10.000000000000000000
+    TopAxis.Automatic = False
+    TopAxis.AutomaticMaximum = False
+    TopAxis.AutomaticMinimum = False
+    TopAxis.GridCentered = True
+    TopAxis.Maximum = 10.000000000000000000
+    View3D = False
+    Zoom.Animated = True
+    BevelWidth = 0
+    TabOrder = 0
+    DefaultCanvas = 'TGDIPlusCanvas'
+    ColorPaletteIndex = 13
+    object Series1: TFastLineSeries
+      Legend.Visible = False
+      SeriesColor = clRed
+      ShowInLegend = False
+      LinePen.Color = clRed
+      LinePen.Width = 5
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series2: TFastLineSeries
+      Legend.Visible = False
+      SeriesColor = clGreen
+      ShowInLegend = False
+      LinePen.Color = clGreen
+      LinePen.Width = 5
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series3: TPointSeries
+      Marks.Callout.Length = 8
+      SeriesColor = clYellow
+      ClickableLine = False
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+  object Edit1: TEdit
+    Left = 344
+    Top = 336
+    Width = 57
+    Height = 21
+    TabOrder = 1
+    Text = '0'
+  end
+  object Edit2: TEdit
+    Left = 344
+    Top = 368
+    Width = 57
+    Height = 21
+    TabOrder = 2
+    Text = '0'
+  end
+  object ScrollBar1: TScrollBar
+    Left = 80
+    Top = 336
+    Width = 249
+    Height = 17
+    Max = 180
+    PageSize = 0
+    TabOrder = 3
+    OnChange = ScrollBar1Change
+  end
+  object ScrollBar2: TScrollBar
+    Left = 80
+    Top = 368
+    Width = 249
+    Height = 17
+    PageSize = 0
+    TabOrder = 4
+    OnChange = ScrollBar2Change
+  end
+end

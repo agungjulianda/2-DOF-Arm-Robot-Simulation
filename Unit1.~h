@@ -1,0 +1,38 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Chart.hpp>
+#include <ExtCtrls.hpp>
+#include <TeEngine.hpp>
+#include <TeeProcs.hpp>
+#include <Series.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+        TChart *Chart1;
+        TEdit *Edit1;
+        TEdit *Edit2;
+        TFastLineSeries *Series1;
+        TFastLineSeries *Series2;
+        TScrollBar *ScrollBar1;
+        TScrollBar *ScrollBar2;
+        TLabel *Label1;
+        TLabel *Label2;
+        TPointSeries *Series3;
+        void __fastcall ScrollBar1Change(TObject *Sender);
+        void __fastcall ScrollBar2Change(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+        __fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif
